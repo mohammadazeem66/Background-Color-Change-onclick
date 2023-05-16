@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Change onclick</title>
+    <style>
+   .maincontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .color1{
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid #ffff;
+    background-color: red;
+   }
+   .color2{
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid #ffff;
+    background-color: blue;
+   }
+   .color3{
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid #ffff;
+    background-color: green;
+   }
+   .color4{
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid #ffff;
+    background-color: yellow;
+   }
+    </style>
+
+</head>
+<body>
+    <div class="maincontainer">
+        <span id='one' onclick="color('#f00')" class="color1"></span>
+        <span id='two' onclick="color('#00f')" class="color2"></span>
+        <span id='three' onclick="color('#0f0')" class="color3"></span>
+        <span id='four' onclick="color('#ff0')" class="color4"></span>
+    </div>
+    <script>
+    function color(c){
+      var body = document.body;
+      body.style.background = c;
+    }
+    </script>
+
+</body>
+</html>
